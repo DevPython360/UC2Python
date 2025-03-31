@@ -4,7 +4,12 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.content-container{
+    display: flex
+    ;
+        width: 100%;
+        justify-content: space-between;
+}
 .container{
     max-width: 800px;
     margin: 40px auto;
@@ -30,6 +35,14 @@ body{
 
     
 }
+.imagem{
+    width: 33.3%;
+    display: flex
+;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 
 h1, h2{
     color: #2c3e50;
@@ -39,7 +52,7 @@ h1, h2{
 .header{
 margin-bottom: 30px;
 text-align: center;
-border-bottom: 2px solid #2c3e50;
+border-bottom: 2px solid #2c3e50;width: 33.3%;
 }
 
  .section{
@@ -59,3 +72,4 @@ a{
 ul{
     padding-left: 20px;
 }
+.texto{width: 33.3%;}
