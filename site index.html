@@ -46,10 +46,12 @@
 
         <section id="regiao" class="section">
             <h2>Selecione sua Região</h2>
-            <p>Ou clique no link abaixo para ver restaurantes próximos:</p>
-            <a href="https://www.google.com/maps/search/Restaurante+Exemplo/@-22.7403157,-43.4722791,13z?entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                Veja restaurantes próximos no Google Maps
-            </a>
+            <p>Digite sua região e encontre restaurantes próximos:</p>
+
+            <input type="text" id="inputRegiao" placeholder="Digite sua cidade ou bairro">
+            <button onclick="buscarRegiao()">Buscar</button>
+
+            <p id="resultadoRegiao"></p>
         </section>
     </main>
 
@@ -57,6 +59,19 @@
         <p>&copy; 2025 Comidas Online - Todos os direitos reservados.</p>
         <p>Criado pela empresa JWC</p>
     </footer>
+
+    <script>
+        function buscarRegiao() {
+            let regiao = document.getElementById("inputRegiao").value;
+            if (regiao) {
+                document.getElementById("resultadoRegiao").innerHTML = 
+                    `Restaurantes em <strong>${regiao}</strong> disponíveis em breve!`;
+            } else {
+                document.getElementById("resultadoRegiao").innerHTML = 
+                    "Por favor, digite uma região.";
+            }
+        }
+    </script>
 
 </body>
 </html>
