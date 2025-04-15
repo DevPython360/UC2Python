@@ -1,134 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      scroll-margin-top: 80px;
+    }
+
+    /* Alinhamento das imagens */
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Loja Moda & Estilo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Produto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-                </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Loja Moda & Estilo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produto">Produto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#estoque">Estoque</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Início -->
+  <section id="inicio" class="hero py-5 text-center bg-primary text-white mt-5">
+    <div class="container">
+      <h1 class="display-4">Bem-vindo à nossa loja</h1>
+      <p class="lead">Os melhores tênis, com os melhores preços!</p>
+      <a href="#produto" class="btn btn-light btn-lg">Ver Ofertas</a>
+    </div>
+  </section>
+
+  <!-- Produtos em Destaque -->
+  <section id="produto" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Produtos em Destaque</h2>
+      <div class="row g-4">
+        <!-- Produto 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="https://static.netshoes.com.br/produtos/tenis-adidas-lite-racer-30-feminino/18/3ZP-3550-018/3ZP-3550-018_zoom1.jpg" class="card-img-top" alt="Tênis Adidas">
+            <div class="card-body">
+              <h5 class="card-title">Tênis Adidas</h5>
+              <p class="card-text">Para um melhor ajuste nos pés.</p>
+              <p class="text-primary fw-bold">R$ 299,90</p>
+              <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
             </div>
+          </div>
         </div>
-    </nav>
-
-    <!-- Seção Hero -->
-    <section class="hero py-5 text-center bg-light">
-        <div class="container">
-            <h1 class="display-4">Bem-vindo à nossa loja</h1>
-            <p class="lead">Os melhores tênis, com os melhores preços!</p>
-            <a href="#" target="_blank" class="btn btn-primary btn-lg">Ver Ofertas</a>
+        <!-- Produto 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="https://images.tcdn.com.br/img/img_prod/560775/camiseta_thrasher_magazine_classic_flame_preto_1382_variacao_111259_1_7bb0d06421227bdf109fe99a9a75d993.jpg" class="card-img-top" alt="Blusa Thrasher">
+            <div class="card-body">
+              <h5 class="card-title">Blusa Thrasher</h5>
+              <p class="card-text">Conforto e Estilo.</p>
+              <p class="text-primary fw-bold">R$ 101,94</p>
+              <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Seção Produtos em Destaque -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Produtos em Destaque</h2>
-            <div class="row g-4">
-                <!-- Produto 1 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://static.netshoes.com.br/produtos/tenis-adidas-lite-racer-30-feminino/18/3ZP-3550-018/3ZP-3550-018_zoom1.jpg?ts=1711540292&ims=544x" class="card-img-top" alt="Tênis Adidas">
-                        <div class="card-body">
-                            <h5 class="card-title">Tênis Adidas</h5>
-                            <p class="card-text">Para um melhor ajuste nos pés.</p>
-                            <p class="text-primary fw-bold">R$ 299,90</p>
-                            <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Produto 2 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://images.tcdn.com.br/img/img_prod/560775/camiseta_thrasher_magazine_classic_flame_preto_1382_variacao_111259_1_7bb0d06421227bdf109fe99a9a75d993.jpg" class="card-img-top" alt="Blusa Thrasher">
-                        <div class="card-body">
-                            <h5 class="card-title">Blusa Thrasher</h5>
-                            <p class="card-text">Conforto e Estilo.</p>
-                            <p class="text-primary fw-bold">R$ 101,94</p>
-                            <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Produto 3 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://charth.vtexassets.com/arquivos/ids/601557/vestido-iohara-2.jpg?v=638778336545870000" class="card-img-top" alt="Vestido Feminino">
-                        <div class="card-body">
-                            <h5 class="card-title">Vestido Feminino</h5>
-                            <p class="card-text">Feito para o seu corpo.</p>
-                            <p class="text-primary fw-bold">R$ 200,00</p>
-                            <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Produto 4 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hsETTVkTVmOVNmzWa-oAUPe6XWpAdhfyXQ&s" class="card-img-top" alt="Tênis Nike Revolution">
-                        <div class="card-body">
-                            <h5 class="card-title">Tênis Nike Revolution</h5>
-                            <p class="card-text">Ideal para corrida e dia a dia.</p>
-                            <p class="text-primary fw-bold">R$ 349,90</p>
-                            <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Produto 5 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Moletom Oversized">
-                        <div class="card-body">
-                            <h5 class="card-title">Moletom Oversized</h5>
-                            <p class="card-text">Estilo urbano e conforto total.</p>
-                            <p class="text-primary fw-bold">R$ 129,90</p>
-                            <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Produto 6 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPEBAQEBAQEBAQDxUPDxYVDw8PFRcVFRUWFhURFRUYHSggGBolGxYVITEhJSkrLi4uFx8zODMuNygtLisBCgoKDg0OFxAQFy0dHh0tLS0tLSsxLS0rLysrLS0rLS0tKy0tLS0rLS8tLSsrKy0tKy0vKzctLS0tLS0tLS0tK//AABEIAQMAwgMBIgACEQEDEQH/xAAcAAACAQUBAAAAAAAAAAAAAAAAAQQCBQYHCAP/xABEEAABAwIDBQYCCAQDBwUAAAABAAIDBBESITEFQVFxgQYHEyIyYRSRQnKCobHB0fAjUpKiJDOyFTVDYnPD4URTg5Oz/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAIxEBAQACAQQDAAMBAAAAAAAAAAECEUEDEiExE1FhFLHxBP/aAAwDAQACEQMRAD8A3io8+vRSFHn16IPNCEI0t+2NjQVcZjnjDgRYO0e33a7UfgtQdquydRs95eAZaZ+QkAyvuErfondfQ8dy3eqXtDgQQCCLEEAgg6gjeFjLGVrHO4ubXuIDXMxCxGIDFa3L6Oiu+zqzBI6Q4BGHEWNxhyxNkbbU+YDPdos67Rd2Ucpc+kkELiS7w3A4Lnc1wzaPYgrBdp9nK+jylgf4YNsQtLGQbauaLDM77Lhl069GHUm10oqtjoGOJBllJIsHSOIN7FwaLg6ZDTL3UOHYgqHH4hry1+Qe4ObhN9zhxOmdtRwCsVDU+Fisy5JxAebjkwnduV7bthpjbhfI14s03NwQcrluh36ZaDgFyuNnp2xyl1vjhb6rs7JTO8hbMwX/AJWvbY2s5u/px0V02LUN0It+vuvaiwTmRpnabFrXPcMNhbcM7HIa8M9ADcvhoyx0haA5ziInHTw2nKTda+Z5Dcs3d9u2GWqi1dXmcP4qLSM8Q+oNPMBSWg24Nfq5sTpPIb+bE24FteBBy0U3Y8ULpsIwujIJBFwbjLCTvuLHTepOnW/nxt0tdRTyDSTLovXZ9O8jE4q+bS2RiBdC69jZzDnrncHhYjX5qAWOjZgcC1w1GhH74rN3HSdtrLO7qQWqmbw5j/mHN/JU96ch+DZGDh8SexPsGOvb5q09j9qRUj55ZnFsbow0WY513BwNgBz+9QO0e3fj5Bc4Y2E+E3Q55FxuM3W+WQ439WOeunHzup099W3hjMRLAGAye43HTW2f0mjhl7L3DyWlgLg1wDXC4Od7iwIytzuvSqpmkEtu67cV7i1yeZ3aG5B3e137GdmJKuTxZAW0zT5zoZCPoN9jvO4c1nHHa5ZdrZPZmkENHTsAt/DDjrq/zH8Vc0WRZeueHipjUc1JUYajmpKqUIQhECjz69FIUefXog80JIUaNJCEAou12tdTzh5swwvxHgMJzUpY1282oyCmEbntY+ofgYCcOIN8zgPf05e6l9LjN2NU10Ba4hwvnzHNeDKOJ1zicxxubgg35gp1czg46lpN+XuF4h+8G4Xju+H0pJzEmmmETnAm2KwcbeU20c4a3GeYV9r6x7gxt3MY1jbllhjtaxxgHC3flkbZ5LFJnXXtQbVlgNh5473wkkW4lrvo/h7KxLOGTQRlpa4Odixet1iSQWkvvYYvK11zYat1vdXymoWsOKRpxPB8K/8Aw2m3kuDc6XJKxI9oad2ZEsLz6vKHB3Oxz52V7oqv4qNpilL5GvHhE3AxC/8ADkBzDSDYnddp3IuMk8lVeNIBU0oLKqEGOaInDiLM/BcNMWZwu0N94IKdL2hjmgfJJD/ioxiZFIC0vJNmtbcaFyte2tuMjAMRkjnddswPAHIOJ+k04gPa43Be3Zuga1orKnyjA4xE3AY3fK47sgSOGu9TTW/pepqcmHBJgMh85NssZuXFnDMm3DJYvUvIFsFy3ENCDmSSTb3ubi/qPALIdm1olYal4LYn3+GuMJc27iZjfQO1A4DkoVZSuddzmWc9wLbEA4b3ILXb8z1A3rU8M54903D7F7FNbLhd/kRHFI7QkG4wNPu4HkAfZbcghbG1rGNDWNGFoGQAG5Y33fbNMFK57m4TPJjAuTZoAa25PJx6rJ16MMdR8/qZbuvo0IQtsGNRzUlRhu5qSqlCEIRAo1Rr0UlRqjXog8k0kKNBCEFUIlab7/6zE+ip8OTGSTlx0OM4A0f0EnmFuNaQ7/KtjquliAs+GmL3uzzEr/Kzp4ZP2kK1nBtOaLJkjgBuPnHQHRSo+0UoN3NYeIF23/GytTr81S4LNxl9xZnlPVZZD2gp3WxY4z7txD5tXsdo07tJo+rsP4rDEHmsfFi6z/oyZRJtOHTGPxUrZfaWKmc52Jz8TfS3GMwbtdcaWzGu8rFnSR+C1gYRN4rnPffIsLWhjAL8bnTevAhPih/IyZ52SqoKypqJKl8UTYmOqQ15a1sjrk4QL2DW8M93A3u0FTLtyqwtxN2ZTHz6sE79Q0+2mW4DPMi2rG2uMWlxfS9t9vdbXG0YpzBs3Y7/ACvi88gBb4MX/ENjbFKb9C7XO4mWGvTp0+p3TWX+skg2m2plcw4HQUpwykAFvitILImHS4Au47sTRxtKmoJXy7nSPfDG1pHo8TzONvZnhk8LnriO3doCEQbG2bhZI4hrnjWNpGJzif8A3CLuJ3D3ItszspQukeaqUue4EtY85eI8jC+aw9vKOGfALnMd11z6mpfz+2TwRNY1rG+ljQ1vICwVaSa9LwBCEIG3Uc1KUVuo5qUqlCEIRAotT6uilKJU+roix5oukhRTugpIKoCuee+isMu1ZWF12wQxRNAINrs8R3W710KTzPLXouU+1O1H1lZU1L2eG6aUuLDkWAWY1jv+YBoB9wVCrSeqoKrzS/eiqPOyVl6oAQUgmw5WVJUjDlpx3e5Xi9qDzupFHVywvbLE90cjfS5pIIXjZVAILhQVs0cwqGSPbMHGQSX82J17uJOpNzrxXR3dZtB1Rsqme8lz2uljcSblxbM8YjzC5rgC3/3I1Qds10e+GqkB/wDkDZB/qKi7bBTVKaBoukhBU3Uc1KUVuo5qUqlCEIRAolV6uilqJVerp+qLHihCSimldCV0DXKvauvbVVtXUMJLJqmSRhIIuwuOB39Nl1FX1AihllIuIonykXtfA0utfdouSTew3ZD8ESqc0XKAgk/sqh4krpF3sldB7XAAXm653JXySxHigYZxTwhUgc16NA4IPWJwW6O4WqYYq6EXxiSKYn/lc1zAOhYf6lpdl1tXuInAqqtm99K1/wD9clv+4g3SEJJqKaEk0DbqOalqI3Uc1LVShCEIgUOr9XT9VMUOr9XT9UWPFCSFFNUppFBjneNVOi2VXOY0uJgMWW4SkRuf0Diei5nkOa6R70n22RW5gXZG35zRiy5sOZ4qpRdLEfZIhBQBcVQXKrokGFxDWi7nENaOJJsB96CklAf7fNTNvUPw9VUwFuHwaiSK2IutheRYOIBcPcjNQ2kfyhBWHu4tH3qocyqQ4cCOilto3lmMNJbx0+459UHi2/7K2R3Hz22m5u59FMP6XxO/IrXA/ei2J3If70OX/opunnhz/fFBvtNJCiqroSQgqbqOamKG3Uc1MVShCEIgUKs9XT9VNUKs9XT9UWPFCSLqKaRQkUGI97RP+x6uzQ7OG+nlHjR3f0y+a0JsuhZMcNnF1w4BuM5ccmEkdRZb+71G32PW5Xs2J3QTx3K5vJbvGm/8+aX0bkvlkzuyzr5MnI94pSR/arVtXY74M3DDdxs1xwuztbykAnoFDZU7i6TDbQSOGfyP4Lyc4DQAX+azJl9tZXGzxHmsk7udk/F7Uo4iLtbMJ5PqQ/xDfmWgfaWOBbk7hNjWbVVzhqRSQ5bhZ8pB5+GPslbYYb3xbO8Da9QbeWobHUt+23C7+9jlhQW7O/7ZOKGkrGjOJ7qaTL6MgxsJPs5rh9paUQVBTqHak0LXNikezE0sOFxALTqDn9yghOyaJdKwf3YLaPcMB8bVEtJPwflcG3AvKy4J3E2FuOF3Bavi4kXW7O4akIp6yci3iTxwty1ETC4m+/OWyg2kmkmihNJNBUzUc1MUNmo5qYqlCEIRAoVZ6uimqDW+roix4oSuhRQgoSQWHt7B4mytoN1/wcjhnbNgxjP7K5heM11zLCJGujIuJGmMjdZwLSPvXJE0RYcLvUwljvrNOE/eCqleZQUFNAD8BcrqTsNsv4PZ1HARZzYGvk/6kn8R/wDc4/Jc5dlNm/F1tJTkXbNURsf9TFif/YHLqolCMZ7yqD4jZNcy1yyAzt5wkSD/AEn5rmOy662hAJYZozpJDJGftMI/NciN0HIfghVQVWfFUhVhBWD+q6U7s9mfC7KpGOFnyMNTJzmJeB0aWDoufuy+yfjK2lpd08zWP+oPNJ/Y1y6na0AAAAACwA0AGQChFSqVKYRTCEJoKmajmpihs1HNTFUoQhCIFArfV0/VT1ArfV0/VFjwQhAUU0ihCAbqOa5a7XxtZtCuawgsFbPhIyH+a426G46LqVouQOJXK3abaPxdXVVIAaJqiR4AFrDEQ3rYAniblVKtZSQqmBBn/cps/wAXajZLeWmgkmPs5wETf9bvkugAtY9xmyPDpZqwuuaqTwmtFrBsBcLn3LnO6AcVs0KLFbDmDwK5N7Q0ngVdVDa3hVU0Y5NkcB91l1guYe8PGdqVznwvgL53PDHDzYSBZ+WRDgMWWWaJWOqpqoBVQKo2R3H0XibSdKQCKele4ezpHNjafkZFvhaW7hZ4hUVjHX8aSBhjyNsDHu8QX3G7o9dVulRYaaQTCBhMKlNBWzUcwpihM1HMKaqlCEIRAoFb6un6qeoFb6un6osR00IsooQhNBGr65lNFJUSG0cEbpn/AFWDEQPfK3VcsTskqZJXtju90kkz2g4yA5xfcfzWudOC333wVJj2TMBrLNDCfql+Nw6iO3VaCpa18L8bCL2sQWh7SL3sWnUXz9jmLIc+UeGlkebMYXHfaxt7ut6R7nJehpXhzWWu95aGgWzLjhaAd9zv0/FXGbtNM4WtG3ME5SSnLh4jnAZqZ2EaybatE2oLnMfVNJ8xxF4uY8TjmRjDL77KTfK3XDfHYLYL9nUENNIQZcT5ZrG4D5HXLQd9hhF/YrIUIVRUtF9+ezJBXx1JZhglp2RB98i+MvxMPB2Et6cjbeaw/va2Syp2VUOc7AaX/Fxm1wXMBaWH6zXEcyChWhhLRm2Js7bcCx35pVElCPQKp54EwsGu/wApVpKAp2/rXf8AkbO7ktnRzVz5/EljfSxY2MaAGvbJiYQ928C48tszY3yW9FoHuU2kYdpiEus2qgfERYZvYPEZnu9L/mt+qsmFUqQmgaYSVSBs1HNTVCZqOamqpQhCEQKBW+rp+qnqBW+roPzRY8EIQooTSTQYL3zMvspx/lqoXHrjb+LgufHFdQ9ttmfF7PrIB6nQl8f147SM+9gHVcuuIOfHNVKGq49n5zHWUjx9Crgd8pWK2hX/ALEbKfV7QpIWi/8AHZI829McZEj3Ho0jmQN6DqFwzPMpIJvmhRTCtHbGVrNnV7nAFoop7ggEG8bgBY65kK7rE+9efBsetI+k2OPo+aNp+4lBzWf3vQD+7JHkmCqi47G2i6lnhqWeqCVsw+wQS3qLjquro5A4Bzc2uaHN5EXH3Fcix6rp/sLUGXZmz3k3Jo4gT7taGn/SoRfgmkmEU00k0FTNRzU1QmajmFNVShCEIgUCu9XT9VPUCu9XT9UWPBCSaimEJIQIgHI6HI8jkVyXtGjMEssDjd0Er4HEaExuLCR8l1mVzr3uUHgbWqSMIE4ZUtAt9NoDiRuJex5633oVhzQty9w2zbR1dWWepzKeJ53ht3yNb7XMdzxFty0y0XXQ3c1VMk2TE1gAME80Mnu7F4mLq2RvySpGchNIJo0FhXfH/ueo/wCrT/8A7N/8LNVjHebQuqNk1rGglzYmztA1PgvbIR8muRHM5STckqj0Zquk+6919kUN90bx8ppAPwXNbDmuouw9IYNmUEThZzaSMuHu8Yzf3u5Qi+BVBIJopppJoGzUcwpygs1HMKcqlCEIRArfX+r7I/NXBW3aB8/2R+aLHjdF1RdF1GtPS6FRdO6GjJXP/fTTlm1XuOIianhkbi0ybgLWcQMPzJW/yVpDvsp2y1rXxyse+KmZFNHjAc3zPe0tB18rwSNcwmyxrEuXRvdCxg2PS4CwkulMmEaPMrrtdxcBgF+W5c/0eyKib/Lhe4aXya3q45Lbfc3M+mqazZ7niRgY2YEZtEwawShvsQ4D38JNpq+22QmkCmihUuAIIIBBFiDoQdQVUkURy7222AdnV09NmY2nHAeMT82dRm0+7SrCtv8Af9s7OhqgBpJTSHflaSP/ALq1Aqj0hYXENAuXHCBe1ycrX3LruNmENba2FobbhYAW+5cl7Ke1s8Dn3wNnjc+wxHCHtJsN5sDkutyczzUWBVBUqpA0JJoKmajmFOUBmo5hT1UoQhCIFa9pHz/ZH4lXRWjarv4n2R+JRYj4k7ryxIxLLb1TuvLEjxER7tIuL6Xz5Ln3tH2T2pLWzltPPM58j5TI0gxm73XtJiw6j03uOAW+w9YLsWojlq9ox4XGWKve9ojkIc6OQNeCYWPaZMy4YiH8MgAEGvNndmdqU3iOmpzFE5ha98tRTsY2+jnuL8gDbjkTb3y/uV2M6J3xDzczUwkZrfCXyMFx7lpcDvBHurl3kVQio5LYGPdGWNPiUsbhjIYQGvaZCSHOyZbK93BXDuvt8O+2jIqOFnu0UUEhP9UjkN8M4BVS8wVWCgaRTSKIwHvoopZtmExtjLIJW1E5cSHBjQWgx8Td+fsufei6f7fwCTZe0WnT4OV/WNviD72hcwlWFZJ3c0wm2rQMdbD8SHkWuD4bXSAfNgXTYK5z7oqhke16UyfTEkMemUj43Bt76bxlvcF0W0oRWmkE0DQkmgqZqOYU9W9hzHMK4JEoQhCqBWfarf4n2R+JV4Vt2iPP9kfmixbS0pYCpWBGFZaRCwqk5aqdhCRjB3Iq21NSI43yG9o43SGwubNaXGw45LV2y66D42WeSppxSbRp2yvErqdzY5442NdDNHILl3mdYtc3E0kgkLaG16b+G8DPHG9libDNpFvvXOW3Ni1dHIY3Ne5rDhY5ke7cCALsPsfe1xmalZ/3h7agqY4Kanr4XCaeOKRrZIxExjSHeNIfDuGNLRkHgC2/dlvd/XUwhdTwyiZ1MyGOZ4Y5jXlsYjD2YtRhY0dAdCCdDQUVU82bHOb8Y3BvVzhhA9yt09hNjS0lOWSkGR7jI4i/0rXAvnhyGeVzc6YSSTzWetqBxXo2cKwHE1OOpdvU20yNswVeJWWGsU2Oe6GkXtYwOoK9pIaHUNQCSQAP4L81ytiuuiu9aKol2XMymY6Qukj8YNIB8FpLnnXS7W35rn51MGnC/EHDUAty9r53KsZrPO5TZVPU1sr52Y300bJ6cF9gHh9sZZ9Ijykbhv3LfQXPXdPSSnatM+DNkeMzklrSIzG9rha/mvcWtvG6y6DBQj1CaoaVUoKkiUBJBVHqOYVyVtj1HMK5KxKEIQqgVur/AF/ZH5q4q3V58/2R+aLEdCV0XWWlSSSEHnURB7S09CNQeKx+spZ2WBg+IYNC3wH2HHBKQQfq3WSFJFY7RU5LriiMZ4uhp47H2N7jorrTUAaMzdxzcff2+9TUwghvogVEl2eOCvKCAgxx8BbxVcVRh1V7lpwVZ66kwm4CDC+9rtAYoaWmBe2Kpe51UWOwPdBGWYoWO/mdj+4XyJXizsPs+drXCinBkORg2tSzFow3u8SENvus3FopPbud4g8MBrmTU1aJLtxYfDp/HY9p+i7HE3oSp3dxVY6CkJc+wLI7uNThvG50ZaHSY2XJHpaGcAckS+1m2lsGl2K+GeikqHVPxMLA109NMHF5cwwSRgNeMTHvsQCLgaLbDhmeZWs+2Nef9q7OAs90M00zYy918UcJcwYXxhzQXCwcxzmHPK4WxqadsjGSMN2SMbIw8WuAc0/IhB7tKrC82qu6CoISBTQVR6jmFclbY9RzCuSsZoQhCqBW3aHr+yPzQhSrEYJoQo0EJIQCEIQCaEIGmhCCklQ9pi7DfghCKxuOlZUObBK3HFKHxyNuW3a6N4cLjMZEi4O9YP3UVz45ZImYGs8d7SRDEHkYjk6TDjcPYlCEicsj7Xwgbf2My7ywkTYTJI8B7pAHFoJ8oIa3IWGWiybsO8miYDpFNUU8emUcNRLHGzk1jWjkAhCJF/aqkIRTVbUkIK49RzCuSEKxmhCEKo//2Q==" class="card-img-top" alt="Calça Jeans Skinny">
-                        <div class="card-body">
-                            <h5 class="card-title">Calça Jeans Skinny</h5>
-                            <p class="card-text">Perfeita para combinar com tudo.</p>
-                            <p class="text-primary fw-bold">R$ 159,90</p>
-                            <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- /.row -->
+        <!-- Produto 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="https://charth.vtexassets.com/arquivos/ids/601557/vestido-iohara-2.jpg" class="card-img-top" alt="Vestido Feminino">
+            <div class="card-body">
+              <h5 class="card-title">Vestido Feminino</h5>
+              <p class="card-text">Feito para o seu corpo.</p>
+              <p class="text-primary fw-bold">R$ 200,00</p>
+              <a href="#" class="btn btn-outline-primary w-100">Comprar</a>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Rodapé -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-0">2025 Store. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Produtos em Estoque -->
+  <section id="estoque" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Produtos em Estoque</h2>
+      <div class="row g-4">
+        <!-- Produto 4 -->
+        <div class="col-md-3">
+          <div class="card shadow">
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/384857/01/sv01/fnd/PNA/fmt/png" class="card-img-top" alt="Tênis Puma Smash">
+            <div class="card-body">
+              <h5 class="card-title">Tênis Puma Smash</h5>
+              <p class="card-text">Design clássico e confortável.</p>
+              <p class="text-success fw-bold">R$ 249,90</p>
+              <a href="#" class="btn btn-outline-success w-100">Comprar</a>
+            </div>
+          </div>
+        </div>
 
-    <!-- Bootstrap Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Produto 5 -->
+        <div class="col-md-3">
+          <div class="card shadow">
+            <img src="https://s.justapprove.com.br/product/2025/02/01-1302134533.jpg" class="card-img-top" alt="Moletom Preto">
+            <div class="card-body">
+              <h5 class="card-title">Moletom Canguru</h5>
+              <p class="card-text">Ideal para dias frios.</p>
+              <p class="text-success fw-bold">R$ 139,90</p>
+              <a href="#" class="btn btn-outline-success w-100">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="col-md-3">
+          <div class="card shadow">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW86ER3Ih7Wg_oton_vWm7pxZXve3cG4o65K3wXyzyQhAePr_CWtDygTGVtUoZJ7RcqRg&usqp=CAU" class="card-img-top" alt="Boné Estiloso">
+            <div class="card-body">
+              <h5 class="card-title">Boné Estiloso</h5>
+              <p class="card-text">Para completar seu visual.</p>
+              <p class="text-success fw-bold">R$ 59,90</p>
+              <a href="#" class="btn btn-outline-success w-100">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 7 -->
+        <div class="col-md-3">
+          <div class="card shadow">
+            <img src="https://images.tcdn.com.br/img/img_prod/976866/camiseta_basica_masculina_manga_curta_amarela_777_1_1f68217708087145f8542c8fa578f140.jpg" class="card-img-top" alt="Camiseta Básica">
+            <div class="card-body">
+              <h5 class="card-title">Camiseta Básica</h5>
+              <p class="card-text">Simples e versátil.</p>
+              <p class="text-success fw-bold">R$ 39,90</p>
+              <a href="#" class="btn btn-outline-success w-100">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Fale com a gente</h2>
+      <p>Entre em contato pelo e-mail: <strong>contato@modaestilo.com</strong></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Loja Moda & Estilo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
