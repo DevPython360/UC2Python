@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos | Loja Marria</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    body {
+      background-color: #ffe6f0; /* fundo rosa claro */
+    }
+    header {
+      background-color: #ffb6c1 !important; /* rosa médio */
+      color: #6a1b9a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      text-shadow: 1px 1px 3px rgba(106, 27, 154, 0.3);
+    }
+    .navbar {
+      background-color: #ff69b4 !important; /* rosa forte */
+    }
+    .navbar .nav-link {
+      color: #ffffff !important;
+    }
+    .navbar .nav-link.active {
+      font-weight: bold;
+      color: #6a1b9a !important;
+    }
+    .btn-primary {
+      background-color: #6a1b9a;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #8e24aa;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+    footer {
+      background-color: #ffb6c1 !important;
+      color: #6a1b9a;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header class="text-center p-4">
+  <h1>Produtos Marria</h1>
+  <p>Confira nossas peças exclusivas!</p>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Marria</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link active" href="produtos.html">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <div class="row g-4">
+    <div class="col-md-4 text-center">
+      <img src="https://madameshop.com.br/wp-content/uploads/2024/02/vestido-floral-longo-1.webp" alt="Vestido Floral Moderno" class="img-fluid rounded shadow-sm" loading="lazy">
+      <h2 class="h5 mt-2">Vestido Floral</h2>
+      <p>R$129,90 — Delicado, leve e perfeito para qualquer ocasião.</p>
+      <button class="btn btn-primary">Comprar</button>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="https://acdn-us.mitiendanube.com/stores/048/075/products/blusa-de-lese-sem-mangas-12-f15d66d0f785f8916e17258259769799-1024-1024.jpg" alt="Blusa Casual Feminina" class="img-fluid rounded shadow-sm" loading="lazy">
+      <h2 class="h5 mt-2">Blusa Casual</h2>
+      <p>R$89,90 — Conforto para o dia a dia com muito estilo.</p>
+      <button class="btn btn-primary">Comprar</button>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="https://dcdn-us.mitiendanube.com/stores/003/796/781/products/1-a79883152ce090cc2617111334628723-1024-1024.png" alt="Saia Midi Elegante" class="img-fluid rounded shadow-sm" loading="lazy">
+      <h2 class="h5 mt-2">Saia Midi</h2>
+      <p>R$109,90 — A saia perfeita para um look elegante e confortável.</p>
+      <button class="btn btn-primary">Comprar</button>
+    </div>
+  </div>
+</main>
+
+<footer class="text-center p-3">
+  <p>&copy; 2025 Loja Marria — Todos os direitos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
